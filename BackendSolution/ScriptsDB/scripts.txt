@@ -1,0 +1,11 @@
+create table articulo(
+	idArticulo INT PRIMARY KEY identity(1,1),
+	idCategoria INT,
+	codigo VARCHAR(50) NULL,
+	nombre VARCHAR(100) NOT NULL,
+	precio_venta DECIMAL(11,2) NOT NULL,
+	stock INT NOT NULL,
+	descripcion VARCHAR(256),
+	condicion bit default(1) NOT NULL,
+	FOREIGN KEY (idCategoria) REFERENCES categoria(idCategoria)
+);	
