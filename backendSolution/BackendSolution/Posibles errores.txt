@@ -1,0 +1,1 @@
+Una variable que se declaro float y es decimal en la BD
